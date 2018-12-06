@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Html</title>
+</head>
+<body>
+<div id="app">
+    <ol>
+        <li v-for="(item,index) in items">
+            {{ item }}
+            <button v-on:click="buttonClick(index)">清空</button>
+        </li>
+    </ol>
+    <input v-model="items[0]">
+</div>
+</body>
+
+<script src="vue.js"></script>
+<script src="search.js"></script>
+</html>
